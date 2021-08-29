@@ -1,0 +1,7 @@
+{
+    "from_address": "sender@gmail.com",
+    "password": "password",
+    "to_address": "receiver@gmail.com",
+    "bcc": "",
+    "subject": "グローバルIPアドレス変更メール"
+}
