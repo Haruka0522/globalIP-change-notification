@@ -6,10 +6,10 @@ from email.utils import formatdate
 
 
 # 前回のIPを保存するDB
-PREVIOUS_IP_FILE = "previous_ip.json"
+PREVIOUS_IP_FILE = "/home/haruka/globalIP-change-notification/previous_ip.json"
 
 # Gmailアカウントの設定ファイル
-CONFIG_FILE = "config.json"
+CONFIG_FILE = "/home/haruka/globalIP-change-notification/config.json"
 
 
 # Gmailの設定
@@ -56,7 +56,7 @@ def get_global_ip():
     result = requests.get(url, headers)
     data = result.json()
 
-    return data["IP"]
+    return data["ipAddress"]
 
 
 def get_previous_ip_info(file_path):
